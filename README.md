@@ -1,4 +1,4 @@
-### Boston House Pricing Prediction
+### California House Pricing Prediction
 
 ### Software And Tools Requirements
 
@@ -10,5 +10,5 @@
 Create a new environment
 
 ```
-conda create -p venv python==3.7 -y
+conda create -p venv python==3.12 -y
 ```
