@@ -5,9 +5,9 @@ from flask import Flask,request,app,jsonify,url_for,render_template
 import numpy as np
 import pandas as pd
 
-app=Flask(__name__)
+app=Flask(__name__, static_folder='static')
 ## Load the model
-regmodel=pickle.load(open('regmodel.pkl','rb'))
+regmodel=pickle.load(open('mlp_model.pkl','rb'))
 scalar=pickle.load(open('scaling.pkl','rb'))
 @app.route('/')
 def home():
